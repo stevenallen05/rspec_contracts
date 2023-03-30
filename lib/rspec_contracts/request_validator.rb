@@ -22,7 +22,13 @@ module RspecContracts
       end
 
       def opts
-        OpenAPIParser::SchemaValidator::Options.new(coerce_value: true, datetime_coerce_class: DateTime)
+        OpenAPIParser::Config.new(
+          {
+            coerce_value:                true,
+           datetime_coerce_class:       DateTime,
+           strict_reference_validation: true
+          }
+        )
       end
     end
   end
