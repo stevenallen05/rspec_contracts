@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", "~> 7.0.1"
   spec.add_dependency "rspec-rails"
   spec.add_dependency "semverse"
+  spec.add_dependency "openapi_parser", "~> 1.0.0"
 
   spec.add_development_dependency "active_model_serializers"
   spec.add_development_dependency "awesome_print"
